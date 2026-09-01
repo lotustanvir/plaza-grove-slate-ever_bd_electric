@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+  --font-display: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: #07090b;
+  --color-foreground: #e8ecef;
+  --color-surface: #101418;
+  --color-elevated: #171d23;
+  --color-muted: #8b969e;
+  --color-subtle: #5d676f;
+  --color-accent: #2dd4bf;
+  --color-accent-fg: #04201b;
+  --color-border: #232a31;
+  --color-danger: #e06c6c;
+  --color-warn: #c9a36a;
+  --color-ok: #5cb88a;
+  --color-ring: #2dd4bf;
+  --color-card: #101418;
+  --color-card-foreground: #e8ecef;
+  --color-primary: #2dd4bf;
+  --color-primary-foreground: #04201b;
+  --color-secondary: #171d23;
+  --color-secondary-foreground: #e8ecef;
+  --color-destructive: #e06c6c;
+  --color-input: #232a31;
+  --color-popover: #101418;
+  --color-popover-foreground: #e8ecef;
+  --color-accent-muted: #14332e;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 28px;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--color-background);
+    color: var(--color-foreground);
+  }
+
+  body {
+    min-height: 100dvh;
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    letter-spacing: -0.03em;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  * {
+    border-color: var(--color-border);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.hairline {
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--color-foreground) 10%, transparent);
+}

@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "PowerFlex BD",
+      "hasCanvas": false,
+      "bodyTextLen": 1916,
+      "bodyTextHash": "c5261109c3ce6365a248db6aaaa9a58a42461bdadb99fcd80dc775e6e959a1fe",
+      "bodyTextPrefix": "PowerFlex BD Dashboard Solar AI Wind AI LoadShield 9 Zones Resou",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "PowerFlex BD",
+      "hasCanvas": false,
+      "bodyTextLen": 1820,
+      "bodyTextHash": "9819e557a1ab4fd25c51315876695617e255713d2095bcd0d84af8abcf72b2d0",
+      "bodyTextPrefix": "PowerFlex BD BANGLADESH POWER INTELLIGENCE See the deficit befor",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
